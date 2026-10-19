@@ -1,0 +1,1339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Spice Garden — Luxury Modern Indian Dining. Indulge in royal Awadhi and Chettinad heritage recipes, stone-ground spices, and refined culinary hospitality.">
+  <meta name="keywords" content="Spice Garden, Indian restaurant, luxury dining, Awadhi cuisine, Chettinad, Dum Biryani, modern Indian restaurant">
+  <meta name="theme-color" content="#C84B19">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:title" content="Spice Garden — Luxury Modern Indian Restaurant">
+  <meta property="og:description" content="Where Royal Heritage Meets Contemporary Dining. Authentic stone-ground spices and slow-cooked family recipes.">
+  <meta property="og:type" content="restaurant">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80">
+
+  <title>Spice Garden — Luxury Modern Indian Restaurant &amp; Interactive Showcase</title>
+
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%23C84B19'/><path d='M50 20 C35 38 30 55 50 80 C70 55 65 38 50 20 Z' fill='%23D4A373'/><circle cx='50' cy='52' r='8' fill='%23FDFBF7'/></svg>">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Accessible Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Top Showcase Banner / Client Pitch Header Tag -->
+  <aside class="showcase-banner" aria-label="Demo Prototype Notice">
+    <div class="banner-inner container">
+      <span class="banner-badge">PITCH DEMO</span>
+      <p class="banner-text">Interactive Showcase Prototype for Upscale Dining Partners • <strong>Spice Garden</strong> Digital Experience</p>
+      <a href="#reserve" class="banner-link">Preview Online Booking &rarr;</a>
+    </div>
+  </aside>
+
+  <!-- Site Header & Sticky Navigation -->
+  <header class="site-header" id="header" role="banner">
+    <div class="header-container container">
+      <!-- Brand Logo -->
+      <a href="#home" class="brand-logo" aria-label="Spice Garden — Home">
+        <span class="logo-mark">
+          <!-- Saffron Flower & Spice Leaf Icon -->
+          <svg class="svg-icon logo-icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M18 2C18 2 11 12 11 20C11 24.97 14.13 29 18 29C21.87 29 25 24.97 25 20C25 12 18 2 18 2Z" fill="var(--color-primary)"/>
+            <path d="M18 6C18 6 13.5 14 13.5 20C13.5 23.3 15.5 26 18 26C20.5 26 22.5 23.3 22.5 20C22.5 14 18 6 18 6Z" fill="var(--color-accent-gold)"/>
+            <circle cx="18" cy="20" r="3" fill="var(--color-bg-cream)"/>
+            <path d="M18 29V34M13 32L18 34L23 32" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <div class="logo-text">
+          <span class="logo-title">SPICE GARDEN</span>
+          <span class="logo-tagline">ROYAL INDIAN DINING</span>
+        </div>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="desktop-nav" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#menu" class="nav-link">Menu</a></li>
+          <li><a href="#story" class="nav-link">Our Story</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
+          <li><a href="#reviews" class="nav-link">Reviews</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <a href="#reserve" class="btn btn-primary btn-sm header-cta">
+          <span>Reserve a Table</span>
+          <svg class="svg-icon" viewBox="0 0 20 20" fill="currentColor" width="16" height="16" aria-hidden="true">
+            <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd" />
+          </svg>
+        </a>
+
+        <!-- Mobile Drawer Toggle Button -->
+        <button type="button" class="mobile-toggle" id="mobile-toggle" aria-expanded="false" aria-controls="mobile-drawer" aria-label="Toggle navigation menu">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer & Backdrop Overlay -->
+  <div class="drawer-overlay" id="drawer-overlay" aria-hidden="true"></div>
+  <aside class="mobile-drawer" id="mobile-drawer" aria-label="Mobile Navigation" aria-hidden="true">
+    <div class="drawer-header">
+      <div class="drawer-brand">
+        <span class="logo-title">SPICE GARDEN</span>
+        <span class="logo-tagline">ROYAL INDIAN DINING</span>
+      </div>
+      <button type="button" class="drawer-close" id="drawer-close" aria-label="Close navigation menu">
+        <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <nav class="drawer-nav" aria-label="Mobile Menu Links">
+      <ul class="drawer-list">
+        <li><a href="#home" class="drawer-link">Home</a></li>
+        <li><a href="#menu" class="drawer-link">Curated Menu</a></li>
+        <li><a href="#story" class="drawer-link">Our Heritage Story</a></li>
+        <li><a href="#experience" class="drawer-link">The Dining Experience</a></li>
+        <li><a href="#gallery" class="drawer-link">Food &amp; Ambiance Gallery</a></li>
+        <li><a href="#reviews" class="drawer-link">Guest Reviews</a></li>
+        <li><a href="#contact" class="drawer-link">Location &amp; Timings</a></li>
+        <li><a href="#reserve" class="drawer-link highlight-link">Reserve a Table</a></li>
+      </ul>
+    </nav>
+
+    <div class="drawer-footer">
+      <div class="drawer-contact-item">
+        <span class="drawer-label">Direct Reservations:</span>
+        <a href="tel:+919876543210" class="drawer-phone">+91 98765 43210</a>
+      </div>
+      <a href="https://wa.me/919876543210?text=Hi%20Spice%20Garden!%20I%20would%20like%20to%20reserve%20a%20table." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp btn-full">
+        <svg class="svg-icon" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true">
+          <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+        </svg>
+        <span>Instant WhatsApp Desk</span>
+      </a>
+    </div>
+  </aside>
+
+  <!-- Main Landmark -->
+  <main id="main-content">
+
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="home" aria-labelledby="hero-heading">
+      <div class="hero-bg-accent" aria-hidden="true"></div>
+      <div class="container hero-container">
+        
+        <!-- Hero Content Column -->
+        <div class="hero-content">
+          <div class="eyebrow-pill" data-reveal="fade-up">
+            <span class="sparkle-icon" aria-hidden="true">&#10024;</span>
+            <span>HERITAGE FLAVOURS &bull; MODERN ELEVATION</span>
+          </div>
+
+          <h1 class="hero-title" id="hero-heading" data-reveal="fade-up" data-delay="100">
+            Where Royal Heritage <br>
+            <span class="highlight-serif">Meets Contemporary</span> Dining.
+          </h1>
+
+          <p class="hero-subtitle" data-reveal="fade-up" data-delay="200">
+            Handcrafted traditional spice blends, slow-cooked family recipes, and unforgettable hospitality served in an atmosphere of refined warmth and understated grandeur.
+          </p>
+
+          <div class="hero-actions" data-reveal="fade-up" data-delay="300">
+            <a href="#menu" class="btn btn-primary btn-lg">
+              <span>Explore Menu</span>
+              <svg class="svg-icon" viewBox="0 0 20 20" fill="currentColor" width="18" height="18" aria-hidden="true">
+                <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </a>
+
+            <a href="https://wa.me/919876543210?text=Hi%20Spice%20Garden!%20I%20would%20like%20to%20reserve%20a%20table%20at%20your%20restaurant." target="_blank" rel="noopener noreferrer" class="btn btn-outline-whatsapp btn-lg">
+              <svg class="svg-icon" viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+              </svg>
+              <span>Book via WhatsApp</span>
+            </a>
+          </div>
+
+          <!-- Hero Metrics Bar -->
+          <div class="hero-stats" data-reveal="fade-up" data-delay="400">
+            <div class="stat-item">
+              <span class="stat-number">4.9 <span class="stat-star">&#9733;</span></span>
+              <span class="stat-label">500+ Patron Reviews</span>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat-item">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Stone-Ground Spices</span>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat-item">
+              <span class="stat-number">36h</span>
+              <span class="stat-label">Slow Dum Cooking</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Showcase Column -->
+        <div class="hero-visual" data-reveal="fade-left" data-delay="200">
+          <div class="hero-image-wrapper">
+            <!-- Decorative Golden Ring -->
+            <div class="hero-glow-ring" aria-hidden="true"></div>
+
+            <!-- Main Dish Image with CSS Fallback Gradient -->
+            <div class="image-frame">
+              <img 
+                src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=900&q=85" 
+                alt="Signature Royal Awadhi Dum Biryani garnished with saffron and fried shallots"
+                class="hero-img"
+                loading="eager"
+                width="600"
+                height="600"
+              >
+            </div>
+
+            <!-- Floating Fresh Preparation Badge -->
+            <div class="floating-badge badge-top" aria-hidden="true">
+              <div class="badge-icon-wrap">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="svg-icon" width="20" height="20">
+                  <path d="M12 2L9.5 8.5L3 9.5L8 14L6.5 21L12 17.5L17.5 21L16 14L21 9.5L14.5 8.5L12 2Z" fill="var(--color-accent-gold)" stroke="none"/>
+                </svg>
+              </div>
+              <div class="badge-text-wrap">
+                <span class="badge-title">100% Fresh Daily Prep</span>
+                <span class="badge-sub">No Pre-Made Gravies</span>
+              </div>
+            </div>
+
+            <!-- Floating Rating Pill -->
+            <div class="floating-badge badge-bottom" aria-hidden="true">
+              <div class="rating-stars">
+                <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+              </div>
+              <div class="badge-text-wrap">
+                <span class="badge-title">Voted Best Modern Indian</span>
+                <span class="badge-sub">Culinary Excellence Award</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BRAND HIGHLIGHTS STRIP -->
+    <section class="highlights-strip" aria-label="Brand Pillars">
+      <div class="container highlights-container">
+        <!-- Highlight 1 -->
+        <div class="highlight-card" data-reveal="fade-up">
+          <div class="highlight-icon-box">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" class="svg-icon highlight-svg" aria-hidden="true">
+              <!-- Mortar & Pestle Spice Icon -->
+              <path d="M7 16C7 22.627 11.03 28 16 28C20.97 28 25 22.627 25 16H7Z" fill="var(--color-surface-subdued)" stroke="var(--color-primary)"/>
+              <path d="M5 16H27" stroke="var(--color-primary)" stroke-width="2.5" stroke-linecap="round"/>
+              <path d="M21 7L14 18" stroke="var(--color-accent-gold)" stroke-width="3" stroke-linecap="round"/>
+              <circle cx="16" cy="22" r="1.5" fill="var(--color-primary)"/>
+              <circle cx="12" cy="21" r="1" fill="var(--color-primary)"/>
+              <circle cx="20" cy="21" r="1" fill="var(--color-primary)"/>
+            </svg>
+          </div>
+          <div class="highlight-info">
+            <h3 class="highlight-title">Hand-Pounded Spices</h3>
+            <p class="highlight-desc">Stone-ground daily to release essential volatile oils and unmatched aroma without heat degradation.</p>
+          </div>
+        </div>
+
+        <!-- Highlight 2 -->
+        <div class="highlight-card" data-reveal="fade-up" data-delay="100">
+          <div class="highlight-icon-box">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" class="svg-icon highlight-svg" aria-hidden="true">
+              <!-- Royal Chef Toque & Crown Icon -->
+              <path d="M9 26H23V23H9V26Z" fill="var(--color-surface-subdued)" stroke="var(--color-primary)"/>
+              <path d="M9 23C7 21 6 18 7 15C8 12 11 11 13 13C14 10 18 10 19 13C21 11 24 12 25 15C26 18 25 21 23 23" stroke="var(--color-primary)" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M16 7L17.5 10.5L21 11L18.5 13.5L19 17L16 15L13 17L13.5 13.5L11 11L14.5 10.5L16 7Z" fill="var(--color-accent-gold)" stroke="none"/>
+            </svg>
+          </div>
+          <div class="highlight-info">
+            <h3 class="highlight-title">Master Heritage Chefs</h3>
+            <p class="highlight-desc">Direct lineages from royal Awadhi &amp; Chettinad kitchens bringing over 45 years of combined artistry.</p>
+          </div>
+        </div>
+
+        <!-- Highlight 3 -->
+        <div class="highlight-card" data-reveal="fade-up" data-delay="200">
+          <div class="highlight-icon-box">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" class="svg-icon highlight-svg" aria-hidden="true">
+              <!-- Farm to Table Fresh Leaf & Shield -->
+              <path d="M16 4L6 8V16C6 22.5 10.5 27.5 16 29C21.5 27.5 26 22.5 26 16V8L16 4Z" fill="var(--color-surface-subdued)" stroke="var(--color-primary)"/>
+              <path d="M16 11C13 13 12 17 14 20C15 21.5 17 22 18 21C20 19 20 15 16 11Z" fill="var(--color-accent-gold)"/>
+              <path d="M14 20L18 13" stroke="var(--color-primary)" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="highlight-info">
+            <h3 class="highlight-title">Pristine Farm-to-Table</h3>
+            <p class="highlight-desc">A2 Gir cow bilona ghee, hormone-free native meats, and organic produce sourced directly every sunrise.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DATA-DRIVEN INTERACTIVE MENU SECTION -->
+    <section class="menu-section" id="menu" aria-labelledby="menu-heading">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header text-center" data-reveal="fade-up">
+          <span class="section-eyebrow">CURATED MASTERPIECES</span>
+          <h2 class="section-title" id="menu-heading">A Culinary Tour Across Royal India</h2>
+          <div class="ornament-divider" aria-hidden="true">
+            <span class="ornament-line"></span>
+            <span class="ornament-symbol">&#10040;</span>
+            <span class="ornament-line"></span>
+          </div>
+          <p class="section-subtitle">
+            Every dish is an homage to regional spice routes, slow-cooked in traditional brass deghs and sealed earthenware pots.
+          </p>
+        </div>
+
+        <!-- Category Filter Tabs -->
+        <div class="menu-filter-container" data-reveal="fade-up" data-delay="100">
+          <div class="filter-tabs" role="tablist" aria-label="Menu Categories">
+            <button type="button" class="filter-tab active" data-category="all" role="tab" aria-selected="true" aria-controls="menu-grid">
+              All Creations
+            </button>
+            <button type="button" class="filter-tab" data-category="biryani" role="tab" aria-selected="false" aria-controls="menu-grid">
+              Royal Biryanis
+            </button>
+            <button type="button" class="filter-tab" data-category="starters" role="tab" aria-selected="false" aria-controls="menu-grid">
+              Tandoor &amp; Starters
+            </button>
+            <button type="button" class="filter-tab" data-category="south-indian" role="tab" aria-selected="false" aria-controls="menu-grid">
+              South Indian Curations
+            </button>
+            <button type="button" class="filter-tab" data-category="main-course" role="tab" aria-selected="false" aria-controls="menu-grid">
+              Royal Mains
+            </button>
+            <button type="button" class="filter-tab" data-category="beverages" role="tab" aria-selected="false" aria-controls="menu-grid">
+              Artisanal Beverages
+            </button>
+          </div>
+        </div>
+
+        <!-- Dietary Legend -->
+        <div class="menu-legend" aria-hidden="true" data-reveal="fade-up">
+          <div class="legend-item">
+            <span class="dietary-dot veg-dot"></span>
+            <span>Vegetarian (Shakahari)</span>
+          </div>
+          <div class="legend-item">
+            <span class="dietary-dot nonveg-dot"></span>
+            <span>Non-Vegetarian (Mansaahari)</span>
+          </div>
+          <div class="legend-item">
+            <span class="chili-icon">&#127798;</span>
+            <span>Spice Intensity (1-3)</span>
+          </div>
+        </div>
+
+        <!-- Dynamic Menu Cards Grid (Rendered by script.js) -->
+        <div class="menu-grid" id="menu-grid" role="region" aria-live="polite" aria-label="Menu Items">
+          <!-- Populated dynamically via script.js -->
+          <noscript>
+            <div class="noscript-alert">
+              <p>Please enable JavaScript to view and filter our live interactive culinary menu.</p>
+            </div>
+          </noscript>
+        </div>
+
+        <!-- Menu Bottom Note / WhatsApp Prompt -->
+        <div class="menu-footer-callout" data-reveal="fade-up">
+          <div class="callout-inner">
+            <div class="callout-text">
+              <h3 class="callout-title">Have Specific Dietary Needs or Jain Preferences?</h3>
+              <p class="callout-desc">Our master chefs are delighted to customize spice balances, allium-free gravies, and vegan preparations.</p>
+            </div>
+            <a href="https://wa.me/919876543210?text=Hi%20Chef!%20I%20have%20dietary%20preferences%20(Jain/Vegan/Gluten-Free)%20and%20would%20like%20to%20discuss%20the%20menu." target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+              <span>Talk to Our Concierge</span>
+              &rarr;
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT & CULINARY STORY SECTION -->
+    <section class="about-section" id="story" aria-labelledby="story-heading">
+      <div class="container about-container">
+        
+        <!-- Story Visual Column: 2-image staggered grid with overlay quote -->
+        <div class="about-visual" data-reveal="fade-right">
+          <div class="about-grid-images">
+            <div class="about-img-frame frame-primary">
+              <img 
+                src="https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=800&q=80" 
+                alt="Whole authentic Indian spices stone-ground in traditional mortar"
+                class="about-img"
+                loading="lazy"
+                width="450"
+                height="550"
+              >
+            </div>
+            <div class="about-img-frame frame-secondary">
+              <img 
+                src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80" 
+                alt="Spice Garden luxury dining room with warm golden lighting"
+                class="about-img"
+                loading="lazy"
+                width="400"
+                height="480"
+              >
+            </div>
+
+            <!-- Chef Quote Overlay Card -->
+            <div class="chef-quote-card" aria-label="Head Chef Quote">
+              <div class="quote-mark" aria-hidden="true">&ldquo;</div>
+              <blockquote class="quote-text">
+                "We do not cut corners with pre-ground packets or speed-cooking. We treat every spice like a precious gemstone."
+              </blockquote>
+              <div class="chef-info">
+                <span class="chef-name">Chef Rajeshwar Rao</span>
+                <span class="chef-role">Executive Chef &bull; Spice Garden</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Story Content Column -->
+        <div class="about-content" data-reveal="fade-left">
+          <span class="section-eyebrow">OUR CULINARY HERITAGE</span>
+          <h2 class="section-title" id="story-heading">A Legacy Steeped in Precious Spices</h2>
+          <div class="ornament-divider align-start" aria-hidden="true">
+            <span class="ornament-line"></span>
+            <span class="ornament-symbol">&#10040;</span>
+            <span class="ornament-line"></span>
+          </div>
+
+          <p class="lead-text">
+            Spice Garden began with a singular reverence: that authentic Indian cooking is not merely about chili heat, but a centuries-old symphony of aromatics, slow heat, and deep cultural hospitality.
+          </p>
+
+          <p class="body-text">
+            Our kitchen honors the legendary royal <em>Dum Pukht</em> techniques of the Nawabs of Awadh alongside the bold, sun-drenched coastal spices of the Chettiar merchants. Basmati grains are aged for a minimum of two years; whole black cardamom, Kashmiri saffron, and star anise are stone-pounded by hand to preserve the soul of their fragrance.
+          </p>
+
+          <p class="body-text">
+            Here, every meal is served with the timeless Indian ethos of <em>Atithi Devo Bhava</em>—where every guest is revered as divine royalty.
+          </p>
+
+          <!-- 3 Highlight Badges -->
+          <div class="story-badges">
+            <div class="story-badge-item">
+              <div class="story-badge-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="svg-icon" width="20" height="20" aria-hidden="true">
+                  <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" fill="var(--color-primary)" stroke="none"/>
+                </svg>
+              </div>
+              <div class="story-badge-content">
+                <strong>Heritage Dum Recipes</strong>
+                <span>Preserving royal family secrets untouched by modern industrial shortcuts.</span>
+              </div>
+            </div>
+
+            <div class="story-badge-item">
+              <div class="story-badge-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="svg-icon" width="20" height="20" aria-hidden="true">
+                  <path d="M9 12L11 14L15 10M21 12C21 16.97 16.97 21 12 21C7.03 21 3 16.97 3 12C3 7.03 7.03 3 12 3C16.97 3 21 7.03 21 12Z"/>
+                </svg>
+              </div>
+              <div class="story-badge-content">
+                <strong>Zero Artificial Colors</strong>
+                <span>Only sun-dried Kashmiri chillies, pure turmeric, and golden saffron.</span>
+              </div>
+            </div>
+
+            <div class="story-badge-item">
+              <div class="story-badge-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="svg-icon" width="20" height="20" aria-hidden="true">
+                  <path d="M3 12L5 10M5 10L12 3L19 10M5 10V20C5 20.55 5.45 21 6 21H18C18.55 21 19 20.55 19 20V10M19 10L21 12M9 21V12H15V21"/>
+                </svg>
+              </div>
+              <div class="story-badge-content">
+                <strong>Warm Welcoming Spaces</strong>
+                <span>Intimate family booths, hand-carved jali partitions, and serene sitar notes.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="story-cta-wrap">
+            <a href="#experience" class="btn btn-secondary">
+              <span>Explore The Dining Experience</span>
+              &rarr;
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- THE DINING EXPERIENCE (WHY US) -->
+    <section class="experience-section" id="experience" aria-labelledby="experience-heading">
+      <div class="container">
+        <div class="section-header text-center" data-reveal="fade-up">
+          <span class="section-eyebrow">DISTINCTIVE CRAFTSMANSHIP</span>
+          <h2 class="section-title" id="experience-heading">The Spice Garden Standard</h2>
+          <div class="ornament-divider" aria-hidden="true">
+            <span class="ornament-line"></span>
+            <span class="ornament-symbol">&#10040;</span>
+            <span class="ornament-line"></span>
+          </div>
+          <p class="section-subtitle">
+            Every element of our dining room, cellar, and kitchen is carefully orchestrated to honor the sensory wonder of India.
+          </p>
+        </div>
+
+        <div class="experience-grid">
+          <!-- Card 1 -->
+          <div class="experience-card" data-reveal="fade-up">
+            <div class="card-icon-wrapper">
+              <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" class="svg-icon" aria-hidden="true">
+                <circle cx="16" cy="16" r="13" stroke="var(--color-primary)" fill="var(--color-surface-subdued)"/>
+                <path d="M16 8V16L21 19" stroke="var(--color-primary)" stroke-width="2.2" stroke-linecap="round"/>
+                <path d="M12 4L16 2L20 4" stroke="var(--color-accent-gold)" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="card-title">Royal Family Recipes</h3>
+            <p class="card-desc">
+              Heirloom spice blends formulated in royal courts and handed down exclusively to our culinary directors across four generations.
+            </p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="experience-card" data-reveal="fade-up" data-delay="100">
+            <div class="card-icon-wrapper">
+              <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" class="svg-icon" aria-hidden="true">
+                <path d="M16 4C10 10 7 15 7 20C7 25 11 28 16 28C21 28 25 25 25 20C25 15 22 10 16 4Z" fill="var(--color-surface-subdued)" stroke="var(--color-primary)"/>
+                <path d="M16 4V28M16 16L22 12M16 20L10 16" stroke="var(--color-accent-gold)" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="card-title">Handpicked Native Spices</h3>
+            <p class="card-desc">
+              Direct-trade single-estate cardamom from Kerala's high ranges, Guntur sannam chilies, and GI-tagged Pampore saffron strands.
+            </p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="experience-card" data-reveal="fade-up" data-delay="200">
+            <div class="card-icon-wrapper">
+              <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" class="svg-icon" aria-hidden="true">
+                <rect x="4" y="6" width="24" height="20" rx="3" fill="var(--color-surface-subdued)" stroke="var(--color-primary)"/>
+                <line x1="4" y1="13" x2="28" y2="13" stroke="var(--color-primary)"/>
+                <circle cx="10" cy="9.5" r="1.5" fill="var(--color-accent-gold)"/>
+                <circle cx="16" cy="9.5" r="1.5" fill="var(--color-accent-gold)"/>
+                <path d="M10 20L14 23L22 17" stroke="var(--color-primary)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="card-title">Pristine Open Kitchen</h3>
+            <p class="card-desc">
+              Watch our tandoor masters work before theatrical glass bays. Rigorous international food safety and hospital-grade hygiene audits.
+            </p>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="experience-card" data-reveal="fade-up" data-delay="300">
+            <div class="card-icon-wrapper">
+              <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" class="svg-icon" aria-hidden="true">
+                <path d="M4 24H28M6 24V14C6 11 9 9 12 9H20C23 9 26 11 26 14V24" stroke="var(--color-primary)" stroke-width="2" stroke-linecap="round"/>
+                <path d="M12 24V17C12 15 13 14 15 14H17C19 14 20 15 20 17V24" fill="var(--color-surface-subdued)" stroke="var(--color-accent-gold)" stroke-width="2"/>
+                <circle cx="16" cy="5" r="2" fill="var(--color-accent-gold)"/>
+              </svg>
+            </div>
+            <h3 class="card-title">Private &amp; Family Lounges</h3>
+            <p class="card-desc">
+              Acoustically softened dining salons, private anniversary alcoves, and spacious family banquet tables bathed in warm amber glow.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE FOOD & AMBIANCE GALLERY WITH ACCESSIBLE LIGHTBOX -->
+    <section class="gallery-section" id="gallery" aria-labelledby="gallery-heading">
+      <div class="container">
+        <div class="section-header text-center" data-reveal="fade-up">
+          <span class="section-eyebrow">VISUAL FEAST</span>
+          <h2 class="section-title" id="gallery-heading">Culinary &amp; Ambiance Gallery</h2>
+          <div class="ornament-divider" aria-hidden="true">
+            <span class="ornament-line"></span>
+            <span class="ornament-symbol">&#10040;</span>
+            <span class="ornament-line"></span>
+          </div>
+          <p class="section-subtitle">
+            Immerse yourself in our vibrant dining halls, live copper tandoors, and royal culinary presentations. Click any image to view details.
+          </p>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-grid" id="gallery-grid" data-reveal="fade-up" data-delay="100">
+          
+          <!-- Item 1 -->
+          <figure class="gallery-card" data-gallery-index="0" tabindex="0" role="button" aria-label="View Royal Awadhi Dum Biryani in Clay Pot">
+            <div class="gallery-image-box">
+              <img 
+                src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?auto=format&fit=crop&w=800&q=80" 
+                alt="Royal Awadhi Dum Biryani in Clay Pot sealed with dough"
+                class="gallery-img"
+                loading="lazy"
+                width="400"
+                height="320"
+              >
+              <div class="gallery-overlay">
+                <span class="gallery-zoom-badge" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    <line x1="11" y1="8" x2="11" y2="14"></line>
+                    <line x1="8" y1="11" x2="14" y2="11"></line>
+                  </svg>
+                </span>
+                <div class="gallery-meta">
+                  <span class="gallery-tag">Signature Creation</span>
+                  <h3 class="gallery-item-title">Awadhi Dum Biryani in Clay Pot</h3>
+                  <p class="gallery-item-caption">Slow-cooked under a dough seal with saffron and whole spices.</p>
+                </div>
+              </div>
+            </div>
+          </figure>
+
+          <!-- Item 2 -->
+          <figure class="gallery-card" data-gallery-index="1" tabindex="0" role="button" aria-label="View Handcrafted Peshawari Paneer Tikka">
+            <div class="gallery-image-box">
+              <img 
+                src="https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?auto=format&fit=crop&w=800&q=80" 
+                alt="Peshawari Paneer Tikka grilled with bell peppers and roasted spices"
+                class="gallery-img"
+                loading="lazy"
+                width="400"
+                height="320"
+              >
+              <div class="gallery-overlay">
+                <span class="gallery-zoom-badge" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    <line x1="11" y1="8" x2="11" y2="14"></line>
+                    <line x1="8" y1="11" x2="14" y2="11"></line>
+                  </svg>
+                </span>
+                <div class="gallery-meta">
+                  <span class="gallery-tag">Live Tandoor</span>
+                  <h3 class="gallery-item-title">Peshawari Paneer Tikka</h3>
+                  <p class="gallery-item-caption">Charcoal-roasted cottage cheese with yellow chilli and hung curd.</p>
+                </div>
+              </div>
+            </div>
+          </figure>
+
+          <!-- Item 3 -->
+          <figure class="gallery-card" data-gallery-index="2" tabindex="0" role="button" aria-label="View The Royal Dining Hall">
+            <div class="gallery-image-box">
+              <img 
+                src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80" 
+                alt="The Main Royal Dining Hall with warm ambient lighting"
+                class="gallery-img"
+                loading="lazy"
+                width="400"
+                height="320"
+              >
+              <div class="gallery-overlay">
+                <span class="gallery-zoom-badge" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    <line x1="11" y1="8" x2="11" y2="14"></line>
+                    <line x1="8" y1="11" x2="14" y2="11"></line>
+                  </svg>
+                </span>
+                <div class="gallery-meta">
+                  <span class="gallery-tag">Ambiance</span>
+                  <h3 class="gallery-item-title">The Royal Dining Hall</h3>
+                  <p class="gallery-item-caption">Hand-carved woodwork, velvet booths, and intimate warm glow.</p>
+                </div>
+              </div>
+            </div>
+          </figure>
+
+          <!-- Item 4 -->
+          <figure class="gallery-card" data-gallery-index="3" tabindex="0" role="button" aria-label="View 36-Hour Slow-Cooked Dal Spice Garden">
+            <div class="gallery-image-box">
+              <img 
+                src="https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80" 
+                alt="Slow-cooked Dal Makhani with cream swirl and fresh cilantro"
+                class="gallery-img"
+                loading="lazy"
+                width="400"
+                height="320"
+              >
+              <div class="gallery-overlay">
+                <span class="gallery-zoom-badge" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    <line x1="11" y1="8" x2="11" y2="14"></line>
+                    <line x1="8" y1="11" x2="14" y2="11"></line>
+                  </svg>
+                </span>
+                <div class="gallery-meta">
+                  <span class="gallery-tag">Heritage Slow Pot</span>
+                  <h3 class="gallery-item-title">Dal Spice Garden (36 Hours)</h3>
+                  <p class="gallery-item-caption">Simmered over smoldering coals with fresh white butter.</p>
+                </div>
+              </div>
+            </div>
+          </figure>
+
+          <!-- Item 5 -->
+          <figure class="gallery-card" data-gallery-index="4" tabindex="0" role="button" aria-label="View Artisanal Saffron & Herb Refreshments">
+            <div class="gallery-image-box">
+              <img 
+                src="https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80" 
+                alt="Artisanal chilled Indian refreshment garnished with mint and spices"
+                class="gallery-img"
+                loading="lazy"
+                width="400"
+                height="320"
+              >
+              <div class="gallery-overlay">
+                <span class="gallery-zoom-badge" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    <line x1="11" y1="8" x2="11" y2="14"></line>
+                    <line x1="8" y1="11" x2="14" y2="11"></line>
+                  </svg>
+                </span>
+                <div class="gallery-meta">
+                  <span class="gallery-tag">Beverage Program</span>
+                  <h3 class="gallery-item-title">Artisanal Saffron Coolers</h3>
+                  <p class="gallery-item-caption">Ancient botanical blends, roasted cumin, and cold-pressed tamarind.</p>
+                </div>
+              </div>
+            </div>
+          </figure>
+
+          <!-- Item 6 -->
+          <figure class="gallery-card" data-gallery-index="5" tabindex="0" role="button" aria-label="View Chettinad Coastal Delicacy">
+            <div class="gallery-image-box">
+              <img 
+                src="https://images.unsplash.com/photo-1668236543090-82eba5ee5976?auto=format&fit=crop&w=800&q=80" 
+                alt="Crispy golden Masala Dosa served on banana leaf with fresh chutneys"
+                class="gallery-img"
+                loading="lazy"
+                width="400"
+                height="320"
+              >
+              <div class="gallery-overlay">
+                <span class="gallery-zoom-badge" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    <line x1="11" y1="8" x2="11" y2="14"></line>
+                    <line x1="8" y1="11" x2="14" y2="11"></line>
+                  </svg>
+                </span>
+                <div class="gallery-meta">
+                  <span class="gallery-tag">South Indian Craft</span>
+                  <h3 class="gallery-item-title">Ghee Roast Dosa &amp; Chutneys</h3>
+                  <p class="gallery-item-caption">Fermented batter roasted in pure A2 bilona ghee with podi spice.</p>
+                </div>
+              </div>
+            </div>
+          </figure>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- LIGHTBOX MODAL DIALOG -->
+    <div class="lightbox-modal" id="lightbox-modal" role="dialog" aria-modal="true" aria-label="Image Preview" aria-hidden="true">
+      <div class="lightbox-backdrop" id="lightbox-backdrop"></div>
+      <div class="lightbox-dialog">
+        <!-- Close Button -->
+        <button type="button" class="lightbox-close" id="lightbox-close" aria-label="Close image preview">
+          <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+
+        <!-- Navigation Buttons -->
+        <button type="button" class="lightbox-nav lightbox-prev" id="lightbox-prev" aria-label="Previous image">
+          <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+        </button>
+        <button type="button" class="lightbox-nav lightbox-next" id="lightbox-next" aria-label="Next image">
+          <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+
+        <!-- Lightbox Content -->
+        <div class="lightbox-content">
+          <div class="lightbox-image-wrap">
+            <img src="" alt="" id="lightbox-img" class="lightbox-img">
+          </div>
+          <div class="lightbox-caption">
+            <div class="caption-header">
+              <span class="lightbox-counter" id="lightbox-counter">1 of 6</span>
+              <span class="lightbox-tag" id="lightbox-tag">Signature</span>
+            </div>
+            <h3 class="lightbox-title" id="lightbox-title">Image Title</h3>
+            <p class="lightbox-desc" id="lightbox-desc">Detailed dish or scene description.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GUEST REVIEWS & SOCIAL PROOF -->
+    <section class="reviews-section" id="reviews" aria-labelledby="reviews-heading">
+      <div class="container">
+        
+        <div class="section-header text-center" data-reveal="fade-up">
+          <span class="section-eyebrow">PATRON EXPERIENCES</span>
+          <h2 class="section-title" id="reviews-heading">Stories From Our Guests</h2>
+          <div class="ornament-divider" aria-hidden="true">
+            <span class="ornament-line"></span>
+            <span class="ornament-symbol">&#10040;</span>
+            <span class="ornament-line"></span>
+          </div>
+          <p class="section-subtitle">
+            Read unprompted experiences shared by culinary connoisseurs, family patrons, and visiting food critics.
+          </p>
+        </div>
+
+        <div class="reviews-grid">
+          
+          <!-- Review 1 -->
+          <article class="review-card" data-reveal="fade-up">
+            <div class="review-rating" aria-label="5 out of 5 stars">
+              <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
+            </div>
+            <blockquote class="review-body">
+              "The Awadhi Dum Biryani and Dal Spice Garden took our entire family right back to the royal banquets of Lucknow. The saffron fragrance and tender meat were transcendent. Impeccable hospitality from start to finish."
+            </blockquote>
+            <div class="review-dish-tag">
+              <span class="tag-label">Must Try:</span>
+              <span class="tag-val">Awadhi Dum Biryani &bull; Dal Spice Garden</span>
+            </div>
+            <div class="review-author">
+              <div class="author-avatar" aria-hidden="true">AM</div>
+              <div class="author-meta">
+                <span class="author-name">Dr. Arvind Menon</span>
+                <span class="author-details">Verified Patron &bull; Visited 2 weeks ago</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Review 2 -->
+          <article class="review-card" data-reveal="fade-up" data-delay="100">
+            <div class="review-rating" aria-label="5 out of 5 stars">
+              <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
+            </div>
+            <blockquote class="review-body">
+              "We celebrated our 5th wedding anniversary here and booked the courtyard alcove. From the bespoke welcome cooler to the fiery Chettinad Prawn Ghee Roast and melt-in-the-mouth Galouti Kebabs, it was extraordinary."
+            </blockquote>
+            <div class="review-dish-tag">
+              <span class="tag-label">Must Try:</span>
+              <span class="tag-val">Galouti Kebabs &bull; Prawn Ghee Roast</span>
+            </div>
+            <div class="review-author">
+              <div class="author-avatar" aria-hidden="true">PK</div>
+              <div class="author-meta">
+                <span class="author-name">Priya &amp; Rohan Kapoor</span>
+                <span class="author-details">Anniversary Dinner &bull; Visited 1 month ago</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Review 3 -->
+          <article class="review-card" data-reveal="fade-up" data-delay="200">
+            <div class="review-rating" aria-label="5 out of 5 stars">
+              <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span>
+            </div>
+            <blockquote class="review-body">
+              "Rarely does a restaurant balance age-old culinary fidelity with contemporary plating so effortlessly. You can truly taste the stone-ground spices and absence of synthetic additives. An absolute triumph."
+            </blockquote>
+            <div class="review-dish-tag">
+              <span class="tag-label">Must Try:</span>
+              <span class="tag-val">Nalli Nihari &bull; Peshawari Paneer</span>
+            </div>
+            <div class="review-author">
+              <div class="author-avatar" aria-hidden="true">SM</div>
+              <div class="author-meta">
+                <span class="author-name">Siddharth Mukherjee</span>
+                <span class="author-details">Culinary Critic &amp; Columnist &bull; 3 weeks ago</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Transparency Watermark Banner -->
+        <div class="demo-watermark-strip" data-reveal="fade-up">
+          <span class="watermark-pill">&#128737; DEMO SHOWCASE AUDIT</span>
+          <p class="watermark-note">
+            This digital platform is a live demonstration prototype crafted for prospective restaurant partners. All culinary assets, brand elements, and reservation engines are fully functional.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- LOCATION, TIMINGS & INTERACTIVE RESERVATION FORM -->
+    <section class="reservation-section" id="reserve" aria-labelledby="reserve-heading">
+      <div class="container">
+        
+        <div class="section-header text-center" data-reveal="fade-up">
+          <span class="section-eyebrow">TABLE RESERVATIONS &amp; VISITING</span>
+          <h2 class="section-title" id="reserve-heading">Book Your Regal Table</h2>
+          <div class="ornament-divider" aria-hidden="true">
+            <span class="ornament-line"></span>
+            <span class="ornament-symbol">&#10040;</span>
+            <span class="ornament-line"></span>
+          </div>
+          <p class="section-subtitle">
+            Due to our slow-dum cooking rituals and intimate seating, we recommend reserving at least 4 hours in advance.
+          </p>
+        </div>
+
+        <!-- Split Layout: Info & Form -->
+        <div class="reservation-split" id="contact">
+          
+          <!-- Column 1: Restaurant Info & Timings -->
+          <div class="location-card" data-reveal="fade-right">
+            <h3 class="info-card-title">Visiting Spice Garden</h3>
+            <p class="info-card-intro">
+              Nestled in the prestigious culinary enclave, surrounded by royal architectural motifs and quiet greenery.
+            </p>
+
+            <div class="info-details-list">
+              <!-- Address -->
+              <div class="info-row">
+                <div class="info-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20" aria-hidden="true">
+                    <path d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 5.03 7.03 1 12 1C16.97 1 21 5.03 21 10Z"/>
+                    <circle cx="12" cy="10" r="3"/>
+                  </svg>
+                </div>
+                <div class="info-content">
+                  <strong class="info-heading">Address &amp; Valet</strong>
+                  <address class="info-text not-italic">
+                    42 Royal Crest Boulevard, Jubilee Enclave,<br>
+                    Near Heritage Arch, Bengaluru, KA 560038<br>
+                    <span class="sub-detail">&#10003; Complimentary Valet Parking Available</span>
+                  </address>
+                </div>
+              </div>
+
+              <!-- Dining Hours -->
+              <div class="info-row">
+                <div class="info-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"/>
+                    <polyline points="12 6 12 12 16 14"/>
+                  </svg>
+                </div>
+                <div class="info-content">
+                  <strong class="info-heading">Dining Hours</strong>
+                  <div class="timings-grid">
+                    <div class="timing-slot">
+                      <span class="slot-badge">Lunch Service</span>
+                      <span class="slot-time">12:00 PM &ndash; 3:30 PM</span>
+                    </div>
+                    <div class="timing-slot">
+                      <span class="slot-badge">Dinner Service</span>
+                      <span class="slot-time">7:00 PM &ndash; 11:30 PM</span>
+                    </div>
+                  </div>
+                  <span class="sub-detail">Open 7 Days a Week &bull; Kitchen closes 45 mins prior</span>
+                </div>
+              </div>
+
+              <!-- Direct Inquiries -->
+              <div class="info-row">
+                <div class="info-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20" aria-hidden="true">
+                    <path d="M22 16.92V19.92C22 20.47 21.55 20.93 21 20.92C10.5 20.42 2 11.92 1.5 1.42C1.49 0.87 1.95 0.42 2.5 0.42H5.5C6 0.42 6.45 0.79 6.54 1.28C6.7 2.14 7.03 3.4 7.46 4.3C7.57 4.54 7.51 4.83 7.32 5.02L5.8 6.54C7.4 9.35 9.7 11.65 12.5 13.25L14 11.73C14.19 11.54 14.48 11.48 14.72 11.59C15.62 12.02 16.88 12.35 17.74 12.51C18.23 12.6 18.6 13.05 18.6 13.55V16.92H22Z"/>
+                  </svg>
+                </div>
+                <div class="info-content">
+                  <strong class="info-heading">Concierge Desk</strong>
+                  <p class="info-text">
+                    Direct Line: <a href="tel:+919876543210" class="tel-link">+91 98765 43210</a><br>
+                    Email: <a href="mailto:reservations@spicegarden.demo" class="email-link">reservations@spicegarden.demo</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Stylized Interactive Map Placeholder -->
+            <div class="map-card-box">
+              <div class="map-visual">
+                <div class="map-pin-pulse">
+                  <span class="pulse-ring"></span>
+                  <span class="pin-dot"></span>
+                </div>
+                <div class="map-caption">
+                  <strong>Spice Garden Dining Palace</strong>
+                  <span>Jubilee Enclave &bull; Bengaluru</span>
+                </div>
+              </div>
+              <a 
+                href="https://maps.google.com/?q=Spice+Garden+Restaurant" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="btn btn-outline-sm btn-map"
+              >
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"></polygon>
+                  <line x1="9" y1="3" x2="9" y2="18"></line>
+                  <line x1="15" y1="6" x2="15" y2="21"></line>
+                </svg>
+                <span>Get Directions in Google Maps</span>
+              </a>
+            </div>
+
+            <!-- Instant WhatsApp Quick Booking Card -->
+            <div class="whatsapp-quick-box">
+              <div class="wa-text-col">
+                <strong>Prefer Instant Confirmation?</strong>
+                <span>Message our maitre d' directly on WhatsApp.</span>
+              </div>
+              <a 
+                href="https://wa.me/919876543210?text=Hi%20Spice%20Garden!%20I%20would%20like%20to%20reserve%20a%20table%20for%20tonight." 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="btn btn-whatsapp"
+              >
+                <span>Chat on WhatsApp</span>
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Column 2: Sleek Interactive Reservation Form -->
+          <div class="reservation-card" data-reveal="fade-left">
+            <div class="form-header">
+              <h3 class="form-title">Reserve Your Table</h3>
+              <p class="form-subtitle">Complete this request for priority table seating.</p>
+            </div>
+
+            <form id="reservation-form" class="reservation-form" novalidate>
+              
+              <!-- Row: Name & Phone -->
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="res-name" class="form-label">Full Name <span class="req" aria-hidden="true">*</span></label>
+                  <input 
+                    type="text" 
+                    id="res-name" 
+                    name="name" 
+                    class="form-control" 
+                    placeholder="e.g. Vikramaditya Sharma" 
+                    required 
+                    minlength="2"
+                    autocomplete="name"
+                  >
+                  <span class="field-error" id="error-name" aria-live="polite"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="res-phone" class="form-label">Phone Number <span class="req" aria-hidden="true">*</span></label>
+                  <input 
+                    type="tel" 
+                    id="res-phone" 
+                    name="phone" 
+                    class="form-control" 
+                    placeholder="+91 98765 43210" 
+                    required 
+                    autocomplete="tel"
+                  >
+                  <span class="field-error" id="error-phone" aria-live="polite"></span>
+                </div>
+              </div>
+
+              <!-- Row: Date & Time -->
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="res-date" class="form-label">Reservation Date <span class="req" aria-hidden="true">*</span></label>
+                  <input 
+                    type="date" 
+                    id="res-date" 
+                    name="date" 
+                    class="form-control" 
+                    required
+                  >
+                  <span class="field-error" id="error-date" aria-live="polite"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="res-time" class="form-label">Preferred Time Slot <span class="req" aria-hidden="true">*</span></label>
+                  <select id="res-time" name="time" class="form-control select-control" required>
+                    <option value="" disabled selected>Select a service slot</option>
+                    <optgroup label="Lunch Service">
+                      <option value="12:00 PM">12:00 PM</option>
+                      <option value="12:45 PM">12:45 PM</option>
+                      <option value="01:30 PM">01:30 PM</option>
+                      <option value="02:15 PM">02:15 PM</option>
+                    </optgroup>
+                    <optgroup label="Dinner Service">
+                      <option value="07:00 PM">07:00 PM</option>
+                      <option value="07:45 PM">07:45 PM</option>
+                      <option value="08:30 PM">08:30 PM (Peak)</option>
+                      <option value="09:15 PM">09:15 PM</option>
+                      <option value="10:00 PM">10:00 PM</option>
+                    </optgroup>
+                  </select>
+                  <span class="field-error" id="error-time" aria-live="polite"></span>
+                </div>
+              </div>
+
+              <!-- Row: Guests & Seating Zone -->
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="res-guests" class="form-label">Number of Guests <span class="req" aria-hidden="true">*</span></label>
+                  <select id="res-guests" name="guests" class="form-control select-control" required>
+                    <option value="2 Guests" selected>2 Guests (Intimate Table)</option>
+                    <option value="1 Guest">1 Guest (Solo Dining)</option>
+                    <option value="3 Guests">3 Guests</option>
+                    <option value="4 Guests">4 Guests (Family Dining)</option>
+                    <option value="5-8 Guests">5 &ndash; 8 Guests (Group Table)</option>
+                    <option value="9+ Guests">9+ Guests (Private Dining Hall)</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="res-seating" class="form-label">Seating Preference</label>
+                  <select id="res-seating" name="seating" class="form-control select-control">
+                    <option value="Main Dining Hall" selected>Main Royal Salon</option>
+                    <option value="Candlelight Courtyard">Candlelight Courtyard</option>
+                    <option value="Private Dining Room">Private Dining Alcove</option>
+                    <option value="Chef's View Table">Chef's View Table</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Special Dietary Notes / Celebration -->
+              <div class="form-group">
+                <label for="res-notes" class="form-label">Dietary Notes / Special Occasion</label>
+                <textarea 
+                  id="res-notes" 
+                  name="notes" 
+                  class="form-control textarea-control" 
+                  rows="3" 
+                  placeholder="e.g. Jain / Vegan preparation, nut allergy, or celebrating an anniversary..."
+                ></textarea>
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit" class="btn btn-primary btn-full btn-lg" id="submit-btn">
+                <span>Confirm Reservation Request</span>
+                <svg class="svg-icon" viewBox="0 0 20 20" fill="currentColor" width="18" height="18" aria-hidden="true">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+              </button>
+
+              <div class="form-disclaimer">
+                <span>&#128274; Zero booking charges &bull; Instant confirmation via SMS / WhatsApp</span>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- CUSTOM RESERVATION CONFIRMATION TOAST NOTIFICATION -->
+  <div class="toast-container" id="toast-container" aria-live="assertive" aria-atomic="true">
+    <div class="reservation-toast" id="reservation-toast" role="alert">
+      <div class="toast-header">
+        <div class="toast-status">
+          <span class="toast-check-icon">&#10003;</span>
+          <div>
+            <h4 class="toast-title">Table Reservation Confirmed!</h4>
+            <span class="toast-ref" id="toast-ref">Ref: #SG-9842</span>
+          </div>
+        </div>
+        <button type="button" class="toast-close-btn" id="toast-close-btn" aria-label="Close notification">&times;</button>
+      </div>
+
+      <div class="toast-body">
+        <p class="toast-greeting">Thank you, <strong id="toast-guest-name">Guest</strong>! Your regal table has been successfully reserved.</p>
+        <div class="toast-summary-grid">
+          <div class="toast-summary-item">
+            <span class="toast-label">Date:</span>
+            <span class="toast-value" id="toast-date">24 Oct 2026</span>
+          </div>
+          <div class="toast-summary-item">
+            <span class="toast-label">Time:</span>
+            <span class="toast-value" id="toast-time">08:00 PM</span>
+          </div>
+          <div class="toast-summary-item">
+            <span class="toast-label">Party Size:</span>
+            <span class="toast-value" id="toast-party">2 Guests</span>
+          </div>
+          <div class="toast-summary-item">
+            <span class="toast-label">Seating:</span>
+            <span class="toast-value" id="toast-seating">Main Salon</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="toast-footer">
+        <a href="#" class="btn btn-whatsapp btn-sm" id="toast-whatsapp-btn" target="_blank" rel="noopener noreferrer">
+          <span>Send Details to WhatsApp</span>
+          &rarr;
+        </a>
+        <button type="button" class="btn btn-outline-sm" id="toast-dismiss-btn">Dismiss</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- STICKY MOBILE QUICK ACTION BAR (Viewports < 768px) -->
+  <nav class="mobile-action-dock" aria-label="Quick Actions">
+    <a href="tel:+919876543210" class="dock-btn dock-call" aria-label="Call Restaurant">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+        <path d="M22 16.92V19.92C22 20.47 21.55 20.93 21 20.92C10.5 20.42 2 11.92 1.5 1.42C1.49 0.87 1.95 0.42 2.5 0.42H5.5C6 0.42 6.45 0.79 6.54 1.28C6.7 2.14 7.03 3.4 7.46 4.3C7.57 4.54 7.51 4.83 7.32 5.02L5.8 6.54C7.4 9.35 9.7 11.65 12.5 13.25L14 11.73C14.19 11.54 14.48 11.48 14.72 11.59C15.62 12.02 16.88 12.35 17.74 12.51C18.23 12.6 18.6 13.05 18.6 13.55V16.92H22Z"/>
+      </svg>
+      <span>Call</span>
+    </a>
+
+    <a href="#reserve" class="dock-btn dock-reserve" aria-label="Reserve a Table">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+        <line x1="16" y1="2" x2="16" y2="6"></line>
+        <line x1="8" y1="2" x2="8" y2="6"></line>
+        <line x1="3" y1="10" x2="21" y2="10"></line>
+      </svg>
+      <span>Reserve</span>
+    </a>
+
+    <a href="https://wa.me/919876543210?text=Hi%20Spice%20Garden!%20I%20would%20like%20to%20reserve%20a%20table." target="_blank" rel="noopener noreferrer" class="dock-btn dock-wa" aria-label="Chat on WhatsApp">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+      </svg>
+      <span>WhatsApp</span>
+    </a>
+  </nav>
+
+  <!-- MODERN LUXURY FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-container">
+      
+      <!-- Brand & Mission Column -->
+      <div class="footer-col col-brand">
+        <a href="#home" class="brand-logo footer-logo" aria-label="Spice Garden — Back to top">
+          <span class="logo-mark">
+            <svg class="svg-icon logo-icon" viewBox="0 0 36 36" fill="none" width="28" height="28" aria-hidden="true">
+              <path d="M18 2C18 2 11 12 11 20C11 24.97 14.13 29 18 29C21.87 29 25 24.97 25 20C25 12 18 2 18 2Z" fill="var(--color-primary)"/>
+              <path d="M18 6C18 6 13.5 14 13.5 20C13.5 23.3 15.5 26 18 26C20.5 26 22.5 23.3 22.5 20C22.5 14 18 6 18 6Z" fill="var(--color-accent-gold)"/>
+              <circle cx="18" cy="20" r="3" fill="var(--color-bg-cream)"/>
+            </svg>
+          </span>
+          <div class="logo-text">
+            <span class="logo-title">SPICE GARDEN</span>
+            <span class="logo-tagline">ROYAL INDIAN DINING</span>
+          </div>
+        </a>
+
+        <p class="footer-mission">
+          Honoring the royal culinary heritage of Awadh and Chettinad through stone-ground spices, two-year aged basmati, slow dum-cooking, and refined Indian hospitality.
+        </p>
+
+        <div class="dietary-declaration">
+          <span class="dietary-badge">&#10003; FSSAI Certified</span>
+          <span class="dietary-badge">&#10003; 100% Natural Spices</span>
+          <span class="dietary-badge">&#10003; Zero Added MSG</span>
+        </div>
+      </div>
+
+      <!-- Quick Links Column -->
+      <div class="footer-col col-links">
+        <h4 class="footer-heading">Navigation</h4>
+        <ul class="footer-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#menu">Curated Menu</a></li>
+          <li><a href="#story">Our Culinary Heritage</a></li>
+          <li><a href="#experience">The Dining Experience</a></li>
+          <li><a href="#gallery">Food &amp; Ambiance</a></li>
+          <li><a href="#reviews">Guest Experiences</a></li>
+          <li><a href="#reserve">Online Table Booking</a></li>
+        </ul>
+      </div>
+
+      <!-- Culinary Highlights Column -->
+      <div class="footer-col col-cuisines">
+        <h4 class="footer-heading">Royal Specialties</h4>
+        <ul class="footer-list">
+          <li><a href="#menu">Awadhi Dum Biryani</a></li>
+          <li><a href="#menu">36-Hour Dal Spice Garden</a></li>
+          <li><a href="#menu">Melt-in-Mouth Galouti Kebab</a></li>
+          <li><a href="#menu">Kundapur Prawn Ghee Roast</a></li>
+          <li><a href="#menu">Peshawari Paneer Tikka</a></li>
+          <li><a href="#menu">Kesari Kesar Pista Lassi</a></li>
+        </ul>
+      </div>
+
+      <!-- Hours & Location Column -->
+      <div class="footer-col col-hours">
+        <h4 class="footer-heading">Location &amp; Hours</h4>
+        <p class="footer-text">
+          42 Royal Crest Boulevard, Jubilee Enclave,<br>
+          Bengaluru, KA 560038
+        </p>
+        <p class="footer-text">
+          <strong>Lunch:</strong> 12:00 PM &ndash; 3:30 PM<br>
+          <strong>Dinner:</strong> 7:00 PM &ndash; 11:30 PM
+        </p>
+        <div class="footer-cta-box">
+          <a href="tel:+919876543210" class="tel-link footer-phone">+91 98765 43210</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom Copyright & Pitch Disclaimer -->
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p class="copyright-text">
+          &copy; <span id="copyright-year">2026</span> Spice Garden Dining Ltd. All rights reserved. Handcrafted with reverence for Indian heritage.
+        </p>
+        <p class="pitch-disclaimer">
+          Client Showcase Demo &bull; Designed &amp; Engineered for High-Converting Restaurant Partner Pitches
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
